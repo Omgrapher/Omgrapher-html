@@ -118,17 +118,18 @@ ul{
 }
 .showcase h2{
     color: black;
+    text-shadow:1px 1px white;
     font-size: 40px;
     letter-spacing: 10px;
 
     display: inline-block;
-    margin-top: 60px;
       
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 6s; /* don't forget to set a duration! */
 }
 .showcase h3{
     color:black;
+    text-shadow:0.5px 0.5px white;
     font-size: 20px;
     letter-spacing: 5px;
 
@@ -280,7 +281,7 @@ ul{
 /*Footer*/
 .footer{
     width: 100%;
-    background-color: #909497;
+    background-color: #1A1A1A;
     height: 80px;
     margin-top: 10px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
@@ -432,7 +433,7 @@ ul{
 /*footer*/
 .footer{
     width: 100%;
-    background-color: gray;
+    background-color: #1A1A1A;
     height: 60px;
     margin-top: 10px;
 }
