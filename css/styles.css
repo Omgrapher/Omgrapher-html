@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
 *{
     box-sizing: border-box; /*Quitar todos los bordes*/
     margin: 0;
@@ -163,7 +162,7 @@ ul{
 
 /*Sobre mi*/
 .about-section{
-    background: url('../img/Aboutme.webp') no-repeat left;
+    background: url('../img/Aboutme.jpg') no-repeat left;
     background-size: 45%;
     background-color: #F7F9F9;
     overflow: hidden;
@@ -313,9 +312,6 @@ ul{
     color: #b983e9;
     filter: opacity(0.6);
 }
-
-
-
 /* Dispositivos Moviles*/
 @media screen and (max-width: 768px){
     body{
@@ -458,7 +454,6 @@ ul{
 }
 
 }
-
 /*About me resolution*/
 @media screen and (max-width: 1020px){
     .inner-container{
