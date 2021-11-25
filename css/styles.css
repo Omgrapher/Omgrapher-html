@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    box-sizing: border-box; /*Quitar todos los bordes*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F7F9F9;
+    font-size: 16px;
+    font-family: 'Caveat', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: white;
+    text-decoration: none; /* Quitar lineas de enlace*/
+}
+
+ul{
+    list-style: none;
+}
+
+.conteiner{
+    width: 100%;
+    margin: auto;
+}
+
+/* Nav */
+.menu{
+    width: 100%;
+    font-size: 22px;
+    display: flex; /* A la par del otro*/
+    justify-content: center; /* Ocupara todo el ancho*/
+    align-items: center;
+    height: 80px;
+    padding: 20px 40px;
+    background-color: #020305;  /*#151414*/
+    opacity: 0.7;
+    text-align: center;
+
+    position: fixed;
+    margin-top: 40px;
+    left: 100%;
+    transition: left 0.6s;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 20px;
+    width: max-content;
+}
+.menu ul.navmenu{
+    margin-left: 0px;
+}
+.nav-menu_visibles{
+    left: 0;
+}
+
+/* Mostrar como boton funcional */
+.menu ul li a{
+    padding: 2px;
+}
+.menu ul li a:hover{
+    color:#b983e9;
+    border-bottom: 2px solid white;
+    transition: 0.3s;
+}
+
+.hed{
+    background-color: #F7F9F9; /*#020305 BE9ECB #F2DDFC */
+    opacity: 0.96;
+    height: 40px;
+    color: black;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.hed h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin: 0 0.5rem;
+      
+    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    
+}
+.hed .navicon{
+    margin-top: 10px;
+    border: none;
+    color: black;
+    background: none;
+    cursor: pointer;
+
+    display: inline-block;
+    margin: 0 0.5rem;
+      
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+/*Showcase*/
+.showcase{
+    width: 100%;
+    height: 800px;
+    background: url('../img/Showcase.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.showcase h2{
+    color: black;
+    font-size: 40px;
+    letter-spacing: 10px;
+
+    display: inline-block;
+    margin-top: 60px;
+      
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 6s; /* don't forget to set a duration! */
+}
+.showcase h3{
+    color:black;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+    
+    display: inline-block;
+
+      
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 8s; /* don't forget to set a duration! */
+}
+
+
+/*Primer section*/
+.contenedor{
+    width: 100%;
+    height: 800px;
+    background: url('../img/Cont1.jpg') no-repeat center center/cover;
+    object-fit: cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+}
+.contenedor p{
+  color: #F7F9F9;
+  font-size: 35px;
+  letter-spacing: 10px;
+  margin-left: 125px;
+}
+
+/*Sobre mi*/
+.about-section{
+    background: url('../img/Aboutme.webp') no-repeat left;
+    background-size: 45%;
+    background-color: #F7F9F9;
+    overflow: hidden;
+    padding: 80px 0;
+    margin-top: 10px;
+}
+.inner-container{
+    width: 60%;
+    float: right;
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(69, 69, 69, .5);
+}
+.inner-container h2{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.text-about{
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 30px;
+    text-align: justify;
+}
+.contac-bottom{
+    background: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn a:hover{
+    color: #b983e9;
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+}
+
+/*Porfolio*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 15px;
+    justify-content: center;
+    margin: 10px auto;
+}
+.card-items{
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: gray;
+    box-shadow: 0 0 15px 0 rgba(69, 69, 69, .4);
+}
+.card-items:hover{
+    filter: opacity(0.7);
+}
+
+/*Contacto*/
+.contac-container{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 600px;
+}
+.logo{
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+.contac-wrapper{
+    box-shadow: 0 0 20px 0 rgba(69, 69, 69, .3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contac-wrapper > *{
+    padding: 1em;
+}
+.contac-from form{
+    margin: 0;
+    padding: 1em;
+}
+.contac-from form button,
+.contac-from form input,
+.contac-from form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.contac-from form button{
+    background:lightgray;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 100px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 15px;
+}
+.contac-from form button:hover,
+.contac-from form button:focus{
+    background: #b983e9;
+    transition: 0.8s;
+    outline: 0;
+}
+.contac-info img{
+    width: 1fr;
+    height: 500px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background-color: #909497;
+    height: 80px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.logoomg{
+    font-size: 35px;
+    width: 155px;
+    height: 50px;
+    margin-top: 10px;
+}
+.logoomg a:hover{
+    color: #b983e9;
+}
+.goup{
+    font-size: 20px;
+	width: 52px;
+    height: 40px;
+    background: none;
+    border: none;
+    margin-top: 20px;
+}
+.goup svg:hover{
+    color: #b983e9;
+    filter: opacity(0.6);
+}
+
+
+
+/* Dispositivos Moviles*/
+@media screen and (max-width: 768px){
+    body{
+        font-family: 'Caveat', cursive;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none; /* Quitar lineas de enlace*/
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    
+    .conteiner{
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Nav */
+.menu{
+        font-size: 18px;
+        height: 0;
+        padding: 0;
+        width: 0;
+    }
+.navmenu{
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    padding: 0;
+
+    height: calc(100% - 40px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.5s;
+}
+
+.menu ul li a:hover{
+    border-bottom: none;
+    color: lightgray;
+}
+.nav-menu_visible{
+    left: 0%;
+}
+.hed{
+    padding: 0 40px;
+}
+.hed h2{
+    font-size: 25px;
+}
+.showcase{
+    height: 100vh;
+    width: 100%;
+}
+.showcase h2{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-top: 60px;
+}
+.showcase h3{
+    color: black;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+/*Primer section*/
+.contenedor{
+    height: 400px;
+}
+.contenedor p{
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-left: 30px;
+}
+
+/*Sobre mi*/
+.about-section{
+    background-size: 100%;
+    padding: 100px 40px;
+}
+.inner-container{
+    width: 100%;
+}
+.inner-container h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.text-about{
+    font-size: 16px;
+    font-weight: 450;
+}
+.contac-bottom{
+    font-weight: 700;
+    font-size: 18px;
+}
+/*Contacto*/
+.contac-wrapper{
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+}
+.contac-info img{
+   width: 0;
+   height: 0;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    background-color: gray;
+    height: 60px;
+    margin-top: 10px;
+}
+.footer-container{
+    padding: 0 40px;
+}
+.logoomg img{
+    width: 105px;
+    height: 40px;
+    margin-top: 10px;
+}
+.goup{
+    font-size: 15px;
+	width: 60px;
+    height: 30px;
+    background: none;
+    border: none;
+    margin-top: 15px;
+}
+
+}
+
+/*About me resolution*/
+@media screen and (max-width: 1020px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+@media screen and (max-width: 543px){
+.about-section{
+    padding: 10px;
+}
+.inner-container{
+    padding: 40px;
+    background-color: #F7F9F9;
+}
+}
